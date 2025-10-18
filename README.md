@@ -1,37 +1,55 @@
-# 👋 ¡Hola! Soy Nahuel Richeri
+<h1 align="center">👋 ¡Hola! Soy Nahuel Richeri</h1>
 
-🎓 **Estudiante de Ingeniería en Sistemas de Información** en la **Universidad Tecnológica Nacional (UTN)**.  
-💻 Apasionado por la programación, la tecnología y el desarrollo de soluciones que optimicen procesos y mejoren la experiencia del usuario.
-
----
-
-## 🚀 Sobre mí
-Soy una persona curiosa, resiliente y con una fuerte orientación al aprendizaje continuo.  
-Me interesa comprender cómo funcionan los sistemas desde su base y construir software eficiente, seguro y bien estructurado.  
-Disfruto trabajar en equipo, resolver problemas lógicos y aplicar la tecnología como herramienta de transformación.
+<p align="center">
+  🎓 Estudiante de <b>Ingeniería en Sistemas de Información</b> en la <b>UTN</b> <br>
+  💻 Apasionado por la programación, la tecnología y la mejora continua
+</p>
 
 ---
 
-## 🧠 Habilidades Técnicas
-
-- 🧩 **Lenguajes de programación:** C++  
-- 🗃️ **Bases de datos:** SQL  
-- 🧰 **Herramientas:** Git, Visual Studio, MySQL, herramientas de Office  
-- 🌐 **Otros:** Comunicación efectiva, resolución de problemas, pensamiento analítico
+### 🧠 Sobre mí
+Soy una persona curiosa, resiliente y orientada al aprendizaje constante.  
+Me motiva entender cómo funcionan los sistemas desde adentro y construir software eficiente, organizado y confiable.  
+Busco siempre mejorar, aportar soluciones creativas y trabajar en entornos donde la innovación y la colaboración sean parte del día a día.
 
 ---
 
-## 🎯 Motivaciones
-Mi objetivo es seguir creciendo como desarrollador y futuro ingeniero, participando en proyectos que desafíen mis capacidades y me permitan aprender nuevas tecnologías.  
-Creo en el poder del código para generar impacto real y busco formar parte de equipos donde la innovación y el aprendizaje sean constantes.
+### 💼 Habilidades Técnicas
+
+| Categoría | Tecnologías |
+|------------|-------------|
+| 💻 **Lenguajes de Programación** | C++ |
+| 🗃️ **Bases de Datos** | SQL (MySQL, SQLite) |
+| ⚙️ **Herramientas y Entornos** | Git, Visual Studio, Office |
+| 🌐 **Otras Competencias** | Comunicación, trabajo en equipo, resolución de problemas |
 
 ---
 
-## 🌎 Contacto
-
-- 📧 **Correo:** [nahuelricheri@gmail.com](mailto:nahuelricheri@gmail.com)  
-- 💼 **LinkedIn:** [linkedin.com/in/nahuel-richeri](https://linkedin.com/in/nahuel-richeri)
+### 🚀 Objetivos y Motivaciones
+Mi meta es seguir desarrollándome como programador y futuro ingeniero en sistemas.  
+Quiero participar en proyectos desafiantes que me permitan aprender nuevas tecnologías y contribuir con soluciones que generen impacto real.
 
 ---
 
-⭐ *“La tecnología no solo cambia el mundo, también cambia la forma en que pensamos para construirlo.”*  
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=NahuelRicheri&show_icons=true&theme=tokyonight" alt="GitHub Stats" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NahuelRicheri&layout=compact&theme=tokyonight" alt="Top Langs" height="150"/>
+</p>
+
+---
+
+### 🌎 Conectemos
+
+<p align="center">
+  <a href="mailto:nauel2015yt@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/nahuel-richeri" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <img src="https://komarev.com/ghpvc/?username=NahuelRicheri&style=for-the-badge&color=blue" alt="Profile views"/>
+</p>
+
+---
+
+<p align="center">
+  ⭐ <i>"La tecnología no solo cambia el mundo, también cambia la forma en que pensamos para construirlo."</i> ⭐
+</p>
