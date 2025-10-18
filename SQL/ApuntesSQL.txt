@@ -1,0 +1,71 @@
+
+// (Lo que esta entre parentesis es para aclarar la utilidad)
+
+// Crear base de datos.
+
+CREATE DATA BASE "Nombre de la base de datos"
+
+// Insertar datos a la entidad y luego cargar sus componentes.
+
+INSERT INTO Alumno (nombre columna1,nombre columna2, ...)
+VALUES (Nombre, Apellido, ...);
+
+// Consultar estado de una entidad en la base de datos. 
+Nota: El simbolo (*) Se utiliza para mostrar todos los componentes de la entidad.
+
+SELECT * FROM Alumno; <-(Utilizamos Alumno como entidad de ejemplo)
+SELECT Edad FROM Alumno; <-(Muestra solo el componente edad de la entidad Alumno)
+SELECT DISTINCT Legajo FROM Alumno; <-(Muestra los datos del componente legajo sin mostrar los legajos repetidos o datos repetidos)
+
+// Cambiar nombre de un componente de la entidad de forma temporal para mejor su visualizacion.
+
+SELECT FirstName AS Nombre FROM Alumno
+
+// Filtrar entidad por otro tipo de componente.
+
+ORDER BY RANDOM(); <-(Ordena de forma aleatoria la entidad)
+ORDER BY Precio <-(Ordena en base al componente Precio en la entidad Productos) ASC <-(Ordena de forma ascendente)
+ORDER BY Precio DESC; <-(Ordena de forma descendente)
+ORDER BY Precio ASC NULLS LAST; <-(Ordena los nulls para que se visualicen en ultimo lugar)
+ORDER BY Precio ASC NULLS FIRST; <-(Ordena los nulls para que se visualicen en primer lugar)
+
+// Condicionales.
+
+/ WHERE <-(Donde (Funciona igual que utilizar un if en c++ solo que si es true devuelve lo buscado))
+
+SELECT * FROM Productos WHERE nombreProducto = 'Banana'; (Busca el producto con el nombre Banana)
+Nota: El * lo utilizamos para que a la hora de que encuentre el Producto con el nombre banana, muestre todos los datos de ese producto.
+
+SELECT * FROM Productos WHERE ID_Producto = 18; (Busca el componente con el ID_Producto 18)
+SELECT nombreProducto FROM Productos WHERE ID_Producto = 15; (Busca el nombre del producto con su ID_Producto)
+Nota: En este caso al encontrar el ID_Producto devuelve solo el nombreProducto vinculado a dicho componente.
+
+SELECT * FROM Productos WHERE Precio <= 70; (Muestra los componentes de todos los productos con un precio <= 70)
+
+/ DELETE <-(Elimina entidades, componentes enteras o una variable en particular del componente)
+
+DELETE FROM Productos WHERE ID_Producto = 18;
+Nota: Elimina el producto entero con todos sus componentes ya que verifica que sea el Producto a eliminar mediante ID_Producto = 18.
+
+/ UPDATE <-(Modifica o actualiza el dato o la variable que se quiere cambiar sin eliminar las entidades, componentes o variables)
+
+UPDATE productos SET Precio = 30.5 WHERE ID_Producto = 16;
+Nota: Se prepara para actualizar Productos con un nuevo precio ($30.5), luego busca el producto con where para solo actulizar ese producto.
+
+/ AND, OR, NOT
+
+SELECT * FROM Profesor WHERE ID_Carrera = 1 AND ID_Carrera = 3; (Devuelve profesores de 1° año y de 3° año. 
+Si no se cumple alguna de las 2 condiciones, no devuelve nada)
+
+SELECT * FROM Profesor WHERE ID_Carrera = 1 OR ID_Carrera = 3; (Devuelve profesores de 1° año o de 3° año.
+Si se cumple 1 devuelve solo esa condicion, Si se cumplen ambas condiciones devuelve las 2 y no devuelve ninguno si no existe ninguna)
+
+SELECT * FROM Profesor WHERE NOT ID_Carrera = 1 (Devuelve todos los profesores a exepcion de los que pertenescan a la carrera: ID_Carrera = 1: "Sistemas".)
+
+// Clausulas.
+
+/ LIMIT <-(como su nombre indica da un limite de cantidad de componentes a devolver.)
+
+SELECT * FROM Materia WHERE ID_Materia >= 1 AND NOT ID_Carrera = 1 LIMIT 5; (Devuelve un total de 5 materias exeptuando las de la carrera de sistemas (ID_Carrera = 1)).
+
+/ DISTINCT vs NOT.

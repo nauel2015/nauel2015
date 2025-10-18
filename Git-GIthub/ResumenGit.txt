@@ -1,0 +1,79 @@
+
+// Jerarquia de configuraciones:
+
+    git config --system // Para configurar en el sistema (para todos los usuarios de la computadora).
+    git config --global // Para configurar de manera global (al usuario).
+    git config --local // para configurar de manera local (al archivo).
+
+// Configuracion de alias y correo electronico:
+
+    git config --global user.name "..."
+    git config --global user.email "..."
+
+// Configurar el editor de codigo a utilizar.
+
+    git config --global core.editor "code --wait" // Para visual estudio code de manera global.
+
+// Configurar el color de la interfaz:
+
+    git config --global core.editor ui true
+
+// configurar automatico carries return line fild (propiedad que define como se va a cargar y a bajar del servidor)
+
+    git config --global core.autocrlf true // Salto de linea \r\n para compatibilidad en linux y mac.
+
+// Crear y remover directorio (Carpeta):
+
+    mkdir ... // ... = al nombre de la carpeta a crear.
+    rmdir ... // ... = al nombre de la carpeta a eliminar.
+
+// Crear Repositorio:
+
+    git init // Se crea el repositorio en el directorio donde este ubicado en ese momento.
+
+// Agregar y remover archivos del area de preparacion:
+
+    git add ... // Para Agregar.
+    git rm --cached ... // Para remover.
+
+// Mostrar informacion sobre el area de trabajo y el area de preparacion:
+
+    git status // Para ver a detalle la informacion.
+    git status -s // Para ver solo los archivos.
+
+// Subir archivo al repositorio:
+
+    git commit -m"Mensaje para que saber que cambios hice o que cargue" -a
+    git commit -a // Subir todos los archivos del area de trabajo y preparacion al repositorio.
+    git rm ... // Para eliminar el archivo cargado al repositorio.
+    git restore ... // Para recuperar el archivo eliminado del repositorio y subido al area de preparacion.
+    git checkout ... // Para restaurar el archivo modificado en el area de trabajo a su estado del ultimo commit.
+    git reset --hard // Para restaurar los archivos modificados y subidos al area de preparacion a su estado del ultimo commit.
+    git reset --soft head~1 // Posiciona el head 1 vez por detras del ultimo commit enviando el commit por delante al area de preparacion. 
+    git mv ... ... // Modificar el nombre de un archivo del repositorio y lo envia al area de preparacion.
+    git commit amend // Vuelve a cargar todo lo subido al ultimo commit realizado reemplazandolo.
+    git rebase -i head~n(numero) // Se utiliza para volver a un commit en especifico y editarlo.
+    git rebase --continue // Una vez modificado el commit de x posicion, se utiliza --continue para volver al ultimo commit realizado.
+
+// Ver informacion de un archivo en el repositorio: (Git diff)
+
+    git show ... // Muestra la informacion del archivo en el commit.
+    git diff --staged // Muestra la diferencia de informacion entre un archivo del area de preparacion (v2) con el que esta en el commit (v1).
+    git log // Muestra las identificaciones de todos los commit, Quien lo subio y cuando.
+    git log --oneline // Muestra solo las identificaciones de los commit.
+    git config --global croe.abbrev 10 // Para que muestre los identificadores solo hasta 10 caracteres (Expansion para grandes repositorios). 
+    git diff ident ident (ident serian los identificadores) // Esto para diferenciar la informacion entre commit.
+    git diff --name-only ident ident // Para ver solo los nombres de los commit modificados.
+    git diff --word-diff ident ident // Comparar los commit para ver los cambios realizados entre un commit y otro.
+
+// Comandos:
+
+    pwd // Verificar ruta en la que estas ubicado.
+    ls // Para ver los archivos de la carpeta.
+    ls -a // Para ver todos los archivos incluyeno los ocultos de la carpeta.
+
+
+
+
+
+
